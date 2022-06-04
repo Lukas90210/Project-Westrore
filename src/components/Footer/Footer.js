@@ -114,6 +114,7 @@ function Footer() {
             <p>GOODIES WEBSITE SINCE 2022 | INSPIRED BY YERSINIA PESTIS</p>
             <p>Powered by Elecricity</p>
           </Describe>
+          <p>chuj</p>
         </Content>
       </Container>
     </>
