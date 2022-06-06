@@ -1,22 +1,20 @@
 import { Link } from "react-router-dom";
+import PropTypes from 'prop-types';
 import { Card, CardImage, CardText } from "./Cards.styled";
-import PropTypes from "prop-types";
 
 function Cards({ image, describe, price }) {
   return (
-    <>
-      <Card>
-        <CardImage>
-          <Link to="/Demo">
-            <img alt="text" src={image} />
-          </Link>
-        </CardImage>
-        <CardText>
-          <p>{describe}</p>
-          <p>{price}</p>
-        </CardText>
-      </Card>
-    </>
+    <Card>
+      <CardImage>
+        <Link to="/Demo">
+          <img alt="text" src={image} />
+        </Link>
+      </CardImage>
+      <CardText>
+        <p>{describe}</p>
+        <p>{price}</p>
+      </CardText>
+    </Card>
   );
 }
 Cards.propTypes = {
@@ -25,7 +23,7 @@ Cards.propTypes = {
   price: PropTypes.string.isRequired,
 };
 Cards.defaultProps = {
-  describe: "some describe",
+  describe: 'some describe',
 };
 
 export default Cards;
